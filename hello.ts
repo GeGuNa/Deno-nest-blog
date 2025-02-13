@@ -1,4 +1,5 @@
 import { Get, Controller, Param } from '@nestjs/common';
+import { Render } from "@nest/hbs";
 
 
 @Controller()
@@ -9,6 +10,15 @@ export class Hello {
   hello() {
     return "zqwtest2";
   }
+
+	@Get('/e1231zzz')
+	@Render("index")
+	helloeq123123() {
+		return {
+			message: "Hello",
+		};
+	} 
+  
   
   @Get('/acz2')
   hello2() {
